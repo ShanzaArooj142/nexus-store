@@ -1,8 +1,16 @@
 import React from 'react'
+import Hero from '../components/home/Hero'
+import ShopByCategory from '../components/home/ShopByCategory'
+import FeaturedCollection from '../components/home/FeaturedCollection'
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+    <Hero/>
+    <ShopByCategory/>
+    <FeaturedCollection/>
+    </div>
   )
 }
 
