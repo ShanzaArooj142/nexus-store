@@ -11,34 +11,34 @@ const Footer = () => {
 
         <div className="w-2/5">
           <div className="w-30 h-30 rounded-sm bg-[#C98F8F] flex items-center justify-center overflow-hidden">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRg8LrjbOHF8oNKcS7K5Kr1Gs72LAzXjg-p65Beum4qANJt0qOti9s2Ex&s=10" alt=""className="w-full h-full object-cover" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRg8LrjbOHF8oNKcS7K5Kr1Gs72LAzXjg-p65Beum4qANJt0qOti9s2Ex&s=10" alt=""className="w-full h-full object-cover cursor-pointer" />
           </div>
 
-          <p className="text-sm text-gray-400 leading-relaxed max-w-sm mt-4">
+          <p className="text-md text-gray-400 leading-relaxed max-w-sm mt-4">
             Discover the latest trends in fashion <br />and make every moment special<br />  with StyleHub. Your one-stop shop <br />for stylish and affordable outfits.
           </p>
 
           <div className="flex pt-4">
             <a href="#" className="w-9 h-9 mr-3 rounded-full bg-[#1a1a1a] border border-gray-700 flex items-center justify-center text-gray-300 hover:bg-[#C98F8F] hover:text-white transition">
-              <FaFacebookF  />
+              <FaFacebookF/>
             </a>
 
             <a href="#" className="w-9 h-9 mr-3 rounded-full bg-[#1a1a1a] border border-gray-700 flex items-center justify-center text-gray-300 hover:bg-[#C98F8F] hover:text-white transition">
-              <FaInstagram  />
+              <FaInstagram/>
             </a>
 
             <a href="#" className="w-9 h-9 mr-3 rounded-full bg-[#1a1a1a] border border-gray-700 flex items-center justify-center text-gray-300 hover:bg-[#C98F8F] hover:text-white transition">
-              <FaPinterestP  />
+              <FaPinterestP/>
             </a>
 
             <a href="#" className="w-9 h-9 rounded-full bg-[#1a1a1a] border border-gray-700 flex items-center justify-center text-gray-300 hover:bg-[#C98F8F] hover:text-white transition">
-              <FaTwitter  />
+              <FaTwitter/>
             </a>
           </div>
         </div>
 
         <div className="w-1/5">
-          <h3 className="text-white font-semibold text-lg mb-4">
+          <h3 className="text-white font-semibold text-lg mb-4 font-serif">
             Quick Links
           </h3>
 
@@ -48,19 +48,19 @@ const Footer = () => {
             </li>
 
             <li className="mb-2">
-              <Link to="/shop" className="hover:text-[#C98F8F] transition">Shop</Link>
+              <Link to="/shop" className="hover:text-[#C98F8F] transition">Product</Link>
             </li>
 
             <li className="mb-2">
-              <Link to="/men" className="hover:text-[#C98F8F] transition">Men</Link>
+              <Link to="/men" className="hover:text-[#C98F8F] transition">About</Link>
             </li>
 
             <li className="mb-2">
-              <Link to="/women" className="hover:text-[#C98F8F] transition">Women</Link>
+              <Link to="/women" className="hover:text-[#C98F8F] transition">Cart</Link>
             </li>
 
             <li className="mb-2">
-              <Link to="/kids" className="hover:text-[#C98F8F] transition">Kids</Link>
+              <Link to="/kids" className="hover:text-[#C98F8F] transition">Contact</Link>
             </li>
 
             <li>
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
 
         <div className="w-1/5">
-          <h3 className="text-white font-semibold text-lg font-['Playfair_Display'] mb-4">
+          <h3 className="text-white font-semibold text-lg font-serif mb-4">
             Customer Service
           </h3>
 
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="w-1/5">
-          <h3 className="text-white font-semibold text-lg font-['Playfair_Display'] mb-4">
+          <h3 className="text-white font-semibold text-lg font-serif mb-4">
             Contact Us
           </h3>
 
@@ -125,7 +125,7 @@ const Footer = () => {
 
             <li className="flex items-center mb-3">
               <Phone className="w-4 h-4 text-[#C98F8F] shrink-0 mr-3" />
-              <span>+92 300 1234567</span>
+              <span> +92 341 4486184</span>
             </li>
           </ul>
 
@@ -135,13 +135,9 @@ const Footer = () => {
             </h4>
 
             <div className="flex items-center bg-[#1a1a1a] rounded-full border border-gray-700 overflow-hidden px-3 py-1">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="bg-transparent text-xs text-gray-200 focus:outline-none w-full py-2"
-              />
+              <input type="email" placeholder="Enter your email address" className="bg-transparent text-xs text-gray-200 focus:outline-none w-full py-2"/>
 
-              <button className="bg-[#C98F8F] text-white p-2 rounded-full hover:opacity-90 transition">
+              <button className="bg-[#C98F8F] text-white p-2 rounded-full  transition">
                 <Send />
               </button>
             </div>
