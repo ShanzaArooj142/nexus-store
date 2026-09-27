@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { FadeIn, Slide, SlideDown, SlideLeft, SlideRight, SlideUp,ZoomIn } from '../../utility/Animation';
 
+
 const ShopByCategory = () => {
   return (
     <section className="bg-[#FDFBF7] py-16 px-5 text-center">
@@ -15,25 +16,45 @@ const ShopByCategory = () => {
       </motion.p>
 
       <motion.h2
-
+         variants={ZoomIn(0.4)}
+          initial="hidden"
+         whileInView="visible"
+         viewport={{ once: true }}
        
         className="text-4xl font-serif font-normal text-gray-900 mb-2">
         Shop by <span className="italic text-[#C87982]">Category</span>
       </motion.h2>
-      <p className="text-md text-gray-500 mb-10">
-        Explore our curated collections and find your perfect style.
-      </p>
 
-      <div className="flex flex-row justify-center gap-6 max-w-7xl mx-auto flex-wrap">
+       <motion.p 
+         variants={SlideDown(0.6)}
+         initial="hidden"
+         whileInView="visible"
+         viewport={{ once: true }}
+         className="text-md text-gray-500 mb-10">
+         Explore our curated collections and find your perfect style.
+      </motion.p>
 
-        {/* Card 1 */}
-        <div className="relative w-90 h-110 rounded-2xl overflow-hidden group cursor-pointer shadow-md">
+      <motion.div
+         variants={SlideUp(0.8)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+      
+         className="flex flex-row justify-center gap-6 max-w-7xl mx-auto flex-wrap">
+
+         {/* Card 1 */}
+         <div className="relative w-90 h-110 rounded-2xl overflow-hidden group cursor-pointer shadow-md">
 
           <img src="https://i.pinimg.com/474x/2c/a4/17/2ca417ab063b7837f10a9d1a13032dc5.jpg" alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
 
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300"></div>
 
-          <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-sm p-4 rounded-xl text-left shadow-lg">
+          <motion.div
+              variants={ZoomIn(0.4)}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-sm p-4 rounded-xl text-left shadow-lg">
 
             <h3 className="text-lg font-bold text-gray-900 mb-1">
               Women’s Wear
@@ -44,7 +65,7 @@ const ShopByCategory = () => {
               Shop Collection →
             </a>
 
-          </div>
+          </motion.div>
 
         </div>
 
@@ -56,7 +77,13 @@ const ShopByCategory = () => {
 
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300"></div>
 
-          <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-sm p-4 rounded-xl text-left shadow-lg">
+          <motion.div
+          variants={ZoomIn(0.4)}
+             initial="hidden"
+             whileInView="visible"
+            viewport={{ once: true }} 
+            
+            className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-sm p-4 rounded-xl text-left shadow-lg">
             <h3 className="text-lg font-bold text-gray-900 mb-1">
               Men’s Wear
             </h3>
@@ -66,7 +93,7 @@ const ShopByCategory = () => {
               Shop Collection →
             </a>
 
-          </div>
+          </motion.div>
 
         </div>
 
@@ -78,7 +105,14 @@ const ShopByCategory = () => {
 
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300"></div>
 
-          <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-sm p-4 rounded-xl text-left shadow-lg">
+          <motion.div
+           variants={ZoomIn(0.4)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          
+          
+          className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-sm p-4 rounded-xl text-left shadow-lg">
 
             <h3 className="text-lg font-bold text-gray-900 mb-1">
               Accessories
@@ -91,11 +125,11 @@ const ShopByCategory = () => {
               Shop Collection →
             </a>
 
-          </div>
+          </motion.div>
 
         </div>
 
-      </div>
+      </motion.div>
 
     </section>
   )
