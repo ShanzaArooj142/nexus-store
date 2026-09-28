@@ -35,12 +35,12 @@ const ShopByCategory = () => {
       </motion.p>
 
       <motion.div
-         variants={SlideUp(0.8)}
+         variants={SlideUp(0.4)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
       
-         className="flex flex-row justify-center gap-6 max-w-7xl mx-auto flex-wrap">
+         className="flex flex-row justify-center gap-10 max-w-7xl mx-auto flex-wrap">
 
          {/* Card 1 */}
          <div className="relative w-90 h-110 rounded-2xl overflow-hidden group cursor-pointer shadow-md">

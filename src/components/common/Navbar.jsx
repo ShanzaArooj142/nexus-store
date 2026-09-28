@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className="bg-[#111111] text-white px-6 py-4 flex items-center justify-between shadow-md">
       
       <div className="flex items-center space-x-3">
-        <div className="w-10 h-10 rounded-full bg-[#C98F8F] flex items-center justify-center   overflow-hidden">
+        <div className="w-10 h-10 rounded-full bg-[#C98F8F] flex items-center justify-center   overflow-hidden ml-10">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRg8LrjbOHF8oNKcS7K5Kr1Gs72LAzXjg-p65Beum4qANJt0qOti9s2Ex&s=10" alt="" />
         </div>
 
@@ -32,9 +32,9 @@ const Navbar = () => {
         <Link to="/about" className="text-gray-300 hover:text-[#C98F8F] hover:border-b-2 hover:border-[#C98F8F] pb-1 transition">
           About
         </Link>
-         <Link to="/cart" className="text-gray-300 hover:text-[#C98F8F] hover:border-b-2 hover:border-[#C98F8F] pb-1 transition">
+        {/* <Link to="/cart" className="text-gray-300 hover:text-[#C98F8F] hover:border-b-2 hover:border-[#C98F8F] pb-1 transition">
          Cart 
-        </Link>
+        </Link>*/}
         <Link to="/contact" className="text-gray-300 hover:text-[#C98F8F] hover:border-b-2 hover:border-[#C98F8F] pb-1 transition">
          Contact
         </Link>
@@ -48,17 +48,21 @@ const Navbar = () => {
           <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" />
         </div>
 
-        <div className="relative cursor-pointer">
-          <Heart className="w-6 h-6 text-gray-300 hover:text-white transition" />
-        </div>
+        <div>
+          <button className='text-white hover:text-gray-500'>
+            Sign In
+          </button>
+         </div>
 
         <Link to="/cart" className="relative cursor-pointer">
-          <ShoppingCart className="w-6 h-6 text-gray-300 hover:text-white transition" />
+          <ShoppingCart className="w-6 h-6 text-gray-300   hover:text-[#C98F8F] hover:border-b-2 hover:border-[#C98F8F] pb-1 transition" />
         </Link>
 
-        <div className="cursor-pointer">
-          <User className="w-6 h-6 text-gray-300 hover:text-white transition" />
-        </div>
+         <div>
+          <button className='text-white hover:text-gray-500'>
+          Sign Up
+          </button>
+         </div>
       </div>
     </header>
   );

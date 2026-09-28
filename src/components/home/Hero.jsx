@@ -6,7 +6,7 @@ import { SlideDown, SlideLeft, SlideRight, SlideUp,ZoomIn } from '../../utility/
 const Hero = () => {
   return (
     <section className="bg-white text-gray-900 relative overflow-hidden">
-      <div className=" mx-auto px-4 py-10 flex items-center justify-between">
+      <div className=" mx-auto px-4 py-10 flex items-center justify-between ml-10">
         <div className="w-[50%] flex flex-col items-start">
           <motion.div
               variants={SlideDown(0.2)}
@@ -14,7 +14,7 @@ const Hero = () => {
              whileInView="visible"
              viewport={{ once: true }}
            className="flex items-center gap-2 mb-3">
-            <span className="w-8 h-px bg-rose-400"></span>
+            <span className="w-8 h-px bg-[#885053] "></span>
          
             <span
              className="text-xs uppercase tracking-relaxed text-gray-500 font-semibold">
@@ -30,7 +30,7 @@ const Hero = () => {
             
              className="text-7xl font-serif font-normal leading-tight mb-4">
              Elevate Your <br />
-             <span className="italic text-rose-400 font-light">
+             <span className="italic text-[#885053]  font-light">
               Style
             </span>
           </motion.h1>

@@ -14,7 +14,7 @@ const About2 = () => {
             whileInView="visible"
             viewport={{ once: true }}
           
-           className="text-xs text-rose-400 uppercase tracking-widest font-semibold mb-3">
+           className="text-xs text-[#885053]  uppercase tracking-widest font-semibold mb-3">
             What We Offer
           </motion.p>
           <motion.h2
@@ -25,7 +25,7 @@ const About2 = () => {
            
            
             className="text-4xl font-serif font-semibold text-gray-900">
-            Why Shop <span className="text-rose-400 italic">With Us?</span>
+            Why Shop <span className="text-[#885053]  italic">With Us?</span>
           </motion.h2>
           <motion.p 
             variants={SlideDown(0.6)}

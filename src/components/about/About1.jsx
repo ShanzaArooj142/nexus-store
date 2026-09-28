@@ -15,11 +15,11 @@ const About = () => {
                 viewport={{ once: true }}
               
              className="flex items-center justify-center gap-2 mb-3">
-             <span className="w-8 h-px bg-rose-400"></span>
+             <span className="w-8 h-px bg-[#885053] "></span>
              <h1 className="text-xs uppercase tracking-relaxed text-gray-500 font-semibold">
               Our Story
              </h1>
-             <span className="w-8 h-px bg-rose-400"></span>
+             <span className="w-8 h-px bg-[#885053] "></span>
           </motion.div>
           <motion.h1
                 variants={SlideUp(0.4)}
@@ -28,7 +28,7 @@ const About = () => {
                 viewport={{ once: true }}
              
              className="text-5xl font-serif font-normal mb-4">
-             About <span className="italic text-rose-400">StyleHub</span>
+             About <span className="italic text-[#885053] ">StyleHub</span>
           </motion.h1>
           <motion.p
              variants={ZoomIn(0.8)}
@@ -52,7 +52,7 @@ const About = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
               
-             className="text-sm text-rose-400 uppercase tracking-widest font-semibold">
+             className="text-sm text-[#885053]  uppercase tracking-widest font-semibold">
               Our Journey
             </motion.h1>
 
@@ -109,7 +109,7 @@ const About = () => {
           className="w-[50%] rounded-2xl overflow-hidden shadow-xl relative">
           <img
             
-          src="https://i.pinimg.com/originals/84/c4/c9/84c4c969a7ee0a460e60bbc53e148e4d.png?nii=t" alt="" className="w-full h-90 object-cover transition-transform duration-500 hover:scale-110 cursor-pointer" />
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShmlzjHajRmOCzh6KaEjY2HfYVxYRyRzZysa6KvdAKbctwpu-5Fe54tLnB&s=10" alt="" className="w-full h-90 object-cover transition-transform duration-500 hover:scale-110 cursor-pointer" />
 
          <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
        </motion.div>

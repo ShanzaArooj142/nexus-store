@@ -33,7 +33,7 @@ const FeaturedCollection = () => {
         Handpicked styles, just for you.
       </motion.p>
 
-      <div className="flex justify-center gap-5 max-w-7xl mx-auto flex-wrap">
+      <div className="flex justify-center gap-9 max-w-7xl mx-auto flex-wrap">
 
         {/* card 1 */}
         <motion.div
@@ -44,7 +44,7 @@ const FeaturedCollection = () => {
         
          className="w-66.25 bg-white rounded-xl border border-gray-200 overflow-hidden text-left  shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
           <div className="relative w-full h-70  overflow-hidden mb-3">
-            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=500" alt="" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=500" alt="" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-pointer" />
 
             <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-[#FBEDEE] transition">
               <Heart className="w-4 h-4 text-rose-500" />
@@ -66,7 +66,7 @@ const FeaturedCollection = () => {
               Rs. 3,499
             </span>
 
-            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition  ">
+            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition cursor-pointer ">
               Add to Cart
             </button>
             </div> 
@@ -85,7 +85,7 @@ const FeaturedCollection = () => {
 
          className="w-66.25 bg-white rounded-2xl border border-gray-200 overflow-hidden text-left  shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
           <div className="relative w-full h-70 rounded-xl overflow-hidden mb-3">
-            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=500" alt="Co-Ord Set" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=500" alt="Co-Ord Set" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-pointer" />
             <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-[#FBEDEE] transition">
               <Heart className="w-4 h-4 text-rose-500" />
             </button>
@@ -104,7 +104,7 @@ const FeaturedCollection = () => {
               Rs. 4,299
             </span>
 
-            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition">
+            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition cursor-pointer">
               Add to Cart
             </button>
             </div>
@@ -122,7 +122,7 @@ const FeaturedCollection = () => {
          viewport={{ once: true }}
          className="w-66.25 bg-white rounded-2xl border border-gray-200 overflow-hidden text-left  shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
           <div className="relative w-full h-70 rounded-xl overflow-hidden mb-3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmkaYA1BR7QSGtmFm3k_BvnAH94-wtDar9EDm4YsOnQA&s=10"alt=""className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmkaYA1BR7QSGtmFm3k_BvnAH94-wtDar9EDm4YsOnQA&s=10"alt=""className="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-pointer" />
             <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-[#FBEDEE] transition">
               <Heart className="w-4 h-4 text-rose-500" />
             </button>
@@ -143,7 +143,7 @@ const FeaturedCollection = () => {
               Rs. 2,999
             </span>
 
-            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition">
+            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition cursor-pointer">
               Add to Cart
             </button>
             </div>
@@ -161,7 +161,7 @@ const FeaturedCollection = () => {
          viewport={{ once: true }}
          className="w-66.25 bg-white rounded-2xl border border-gray-200 overflow-hidden text-left  shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
           <div className="relative w-full h-70 rounded-xl overflow-hidden mb-3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEsLPZacXuPPx0cCD1NCqcQsv_czz2umS8_JVW1cA821PP9XQuMdK458&s=10" alt="Denim Jacket" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEsLPZacXuPPx0cCD1NCqcQsv_czz2umS8_JVW1cA821PP9XQuMdK458&s=10" alt="Denim Jacket" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-pointer" />
             <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-[#FBEDEE] transition">
               <Heart className="w-4 h-4 text-rose-500" />
             </button>
@@ -183,7 +183,7 @@ const FeaturedCollection = () => {
               Rs. 3,799
             </span>
 
-            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition">
+            <button className="bg-[#D4959B] hover:bg-[#C87982] text-white px-3.5 py-2 rounded-lg text-xs transition cursor-pointer">
               Add to Cart
             </button>
             </div>
