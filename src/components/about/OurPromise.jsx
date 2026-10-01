@@ -57,9 +57,9 @@ export default function OurPromise() {
              whileInView="visible"
              viewport={{ once: true }}
         
-           className="group w-[31.5%] bg-[#FFFDF9] border border-[#E5DDD4] px-8 py-10 text-center hover:shadow-lg hover:scale-105 active:scale-110 transition-all duration-300 cursor-pointer rounded-lg">
+           className="group w-[31.5%] bg-[#FFFDF9] border-2 border-[#E5DDD4] px-8 py-10 text-center hover:shadow-lg hover:scale-105 active:scale-110 transition-all duration-300 cursor-pointer rounded-lg">
 
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-[#D8C9C0] flex items-center justify-center group-hover:bg-[#7A5C58] transition-all duration-300">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 border-[#D8C9C0] flex items-center justify-center group-hover:bg-[#7A5C58] transition-all duration-300">
               <Leaf className="w-7 h-7 text-[#7A5C58] group-hover:text-white transition-all duration-300" />
             </div>
 
@@ -81,9 +81,9 @@ export default function OurPromise() {
              whileInView="visible"
              viewport={{ once: true }}
         
-           className="group w-[31.5%] bg-[#FFFDF9] border border-[#E5DDD4] px-8 py-10 text-center hover:shadow-lg hover:scale-105 active:scale-110 transition-all duration-300 cursor-pointer rounded-lg">
+           className="group w-[31.5%] bg-[#FFFDF9] border-2 border-[#E5DDD4] px-8 py-10 text-center hover:shadow-lg hover:scale-105 active:scale-110 transition-all duration-300 cursor-pointer rounded-lg">
 
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-[#D8C9C0] flex items-center justify-center group-hover:bg-[#7A5C58] transition-all duration-300">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 border-[#D8C9C0] flex items-center justify-center group-hover:bg-[#7A5C58] transition-all duration-300">
               <Scissors className="w-7 h-7 text-[#7A5C58] group-hover:text-white transition-all duration-300" />
             </div>
 
@@ -105,9 +105,9 @@ export default function OurPromise() {
              whileInView="visible"
              viewport={{ once: true }}
         
-           className="group w-[31.5%] bg-[#FFFDF9] border border-[#E5DDD4] px-8 py-10 text-center hover:shadow-lg hover:scale-105 active:scale-110 transition-all duration-300 cursor-pointer rounded-lg">
+           className="group w-[31.5%] bg-[#FFFDF9] border-2 border-[#E5DDD4] px-8 py-10 text-center hover:shadow-lg hover:scale-105 active:scale-110 transition-all duration-300 cursor-pointer rounded-lg">
 
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-[#D8C9C0] flex items-center justify-center group-hover:bg-[#7A5C58] transition-all duration-300">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full border-2 border-[#D8C9C0] flex items-center justify-center group-hover:bg-[#7A5C58] transition-all duration-300">
               <Users className="w-7 h-7 text-[#7A5C58] group-hover:text-white transition-all duration-300" />
             </div>
 

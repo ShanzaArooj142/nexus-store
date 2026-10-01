@@ -6,6 +6,7 @@ import About from './pages/About'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Contact from './pages/Contact'
+import ProductDetails from './pages/ProductDetails';
 
 const App = () => {
   return (
@@ -15,12 +16,17 @@ const App = () => {
 
          <Route index element={<Home/>}/>
          <Route path='about'element={<About/>}/>
-         <Route path='product'element={<Product/>}/>
+         <Route path="/product" element={<Product/>} />
+         <Route path="product/:id" element={<ProductDetails />} />
          <Route path='cart'element={<Cart/>}/>
          <Route path='contact'element={<Contact/>}/>
 
         </Route>
       </Routes>
+     
+
+
+     
 
     </div>
   )

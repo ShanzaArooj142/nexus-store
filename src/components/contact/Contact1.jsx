@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SlideDown, SlideUp, ZoomIn, SlideRight } from '../../utility/Animation';
 
-const Contact = () => {
+const Contact1 = () => {
   return (
     <section className="bg-[#F8F4EE] px-6 py-24">
       <div className="max-w-300 mx-auto w-[90%]">
@@ -223,4 +223,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact1;

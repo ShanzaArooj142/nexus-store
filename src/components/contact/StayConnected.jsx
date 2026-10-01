@@ -1,66 +1,118 @@
-import React from 'react';
+import React from "react";
+import { FaInstagram, FaFacebookF, FaPinterestP, FaTwitter } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { SlideDown, SlideUp, ZoomIn, SlideRight, SlideLeft, Slide } from '../../utility/Animation';
 
-const StayConnected = () => {
+export default function StayConnection() {
   return (
-    <div className="w-[90%] mx-auto my-12 py-16 px-10 bg-[#f4ece6] rounded-lg shadow-md flex justify-between items-center">
-      
-      {/* Left Side: Photo Frame / Card Graphic */}
-      <div className="w-[25%] flex items-center justify-center">
-        <div className="bg-white p-3 rounded-lg shadow-md rotate-[-3deg] w-[100%]">
-          <img 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhEWwxS1WNrEaOpXPPRCRL6LTjU4ZjYIm51GvSQ8pe9IUpqDTkQui4Jo&s=10" 
-            alt="Fashion collection" 
-            className="w-[100%] h-[180px] object-cover rounded-sm"
-          />
-          <p className="text-center font-serif text-xs text-[#8c5a47] mt-2 italic">
-            More Fashion More You ♡
-          </p>
-        </div>
+    <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-6 py-16 bg-[#fdf8f5]">
+
+     
+      <div className="relative">
+        <motion.div
+          variants={SlideRight(0.2)}
+          initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true }}
+         className="bg-white p-4 shadow-lg rotate-[-5deg] ml-3">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=300&q=80"
+            alt="Clothing rack"
+            className="w-56 h-64 object-cover" />
+
+          <div className="bg-yellow-200 p-3 mt-3 rotate-[4deg]">
+            <motion.p
+              variants={ZoomIn(0.2)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+             className="text-center text-gray-800">
+              More <br /> Fashion <br /> More <br /> You 🤍
+            </motion.p>
+          </div>
+        </motion.div>
       </div>
 
-      {/* Center Side: Text Content & Social Icons */}
-      <div className="w-[50%] flex flex-col items-center text-center">
-        <span className="text-xs tracking-[2px] text-[#8c5a47] uppercase font-bold">
+      <div className="text-center max-w-xl">
+        <motion.h1 
+          variants={SlideDown(0.2)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        
+          className="text-sm tracking-widest text-gray-500">
           STAY CONNECTED
-        </span>
-        <h2 className="text-3xl text-[#2b2b2b] my-2 font-serif">
-          Stay Connected With StyleHub
-        </h2>
-        <p className="text-xs text-[#555555] mb-6">
+        </motion.h1>
+
+        <motion.h2 
+          variants={ZoomIn(0.4)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        
+         className="text-3xl md:text-4xl font-bold text-gray-800 mt-3">
+          Stay Connected With <span className="text-[#8c5a47]"> StyleHub</span>
+        </motion.h2>
+
+        <motion.p
+          variants={SlideUp(0.6)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+         className="text-gray-600 mt-4">
           Follow us for new collections, fashion inspiration & special offers.
-        </p>
+        </motion.p>
 
-        {/* Social Media Icons Circles */}
-        <div className="flex gap-3 mb-6">
-          <div className="w-[35px] h-[35px] bg-[#8c5a47] text-white rounded-full flex items-center justify-center text-xs font-bold cursor-pointer">
-            ig
-          </div>
-          <div className="w-[35px] h-[35px] bg-[#8c5a47] text-white rounded-full flex items-center justify-center text-xs font-bold cursor-pointer">
-            f
-          </div>
-          <div className="w-[35px] h-[35px] bg-[#8c5a47] text-white rounded-full flex items-center justify-center text-xs font-bold cursor-pointer">
-            p
-          </div>
-          <div className="w-[35px] h-[35px] bg-[#8c5a47] text-white rounded-full flex items-center justify-center text-xs font-bold cursor-pointer">
-            x
-          </div>
-        </div>
+        
+        <motion.div
+          variants={ZoomIn(0.8)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+         className="flex justify-center gap-4 mt-6">
 
-        {/* Explore Button */}
-        <button className="border border-[#8c5a47] text-[#8c5a47] py-2 px-6 rounded-full text-xs font-semibold tracking-wider hover:bg-[#8c5a47] hover:text-white transition">
+          <a href="#instagram"className="w-11 h-11 flex items-center justify-center rounded-full   bg-black  hover:bg-[#8c5a47] text-white hover:scale-110 transition" >
+            <FaInstagram />
+          </a>
+
+          <a href="#facebook"className="w-11 h-11 flex items-center justify-center rounded-full bg-black hover:bg-[#8c5a47] text-white hover:scale-110 transition">
+            <FaFacebookF />
+          </a>
+
+          <a href="#pinterest"className="w-11 h-11 flex items-center justify-center rounded-full bg-black hover:bg-[#8c5a47] text-white hover:scale-110 transition">
+            <FaPinterestP />
+          </a>
+
+          <a href="#twitter"className="w-11 h-11 flex items-center justify-center rounded-full bg-black hover:bg-[#8c5a47] text-white hover:scale-110 transition">
+            <FaTwitter />
+          </a>
+
+        </motion.div>
+
+        
+        <motion.button 
+          variants={Slide(0.10)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+         className="mt-8 px-6 py-3 bg-black text-white rounded-full  transition hover:bg-[#8c5a47]">
           Explore New Collection →
-        </button>
+        </motion.button>
+
       </div>
 
-      {/* Right Side: Quote / Text */}
-      <div className="w-[20%] text-center">
-        <p className="font-serif italic text-[#8c5a47] text-base leading-relaxed">
-          Fashion brings people together ♡
+     
+      <motion.div
+        variants={ZoomIn(0.6)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+       className="max-w-xs text-center">
+        <p className="text-xl italic text-gray-700">
+          Fashion brings people together 🤍
         </p>
-      </div>
+      </motion.div>
 
     </div>
   );
-};
-
-export default StayConnected;
+}
