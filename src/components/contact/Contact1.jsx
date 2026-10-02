@@ -5,10 +5,10 @@ import { SlideDown, SlideUp, ZoomIn, SlideRight } from '../../utility/Animation'
 
 const Contact1 = () => {
   return (
-    <section className="bg-[#F8F4EE] px-6 py-24">
-      <div className="max-w-300 mx-auto w-[90%]">
-        
-        <div className="text-center max-w-150 mx-auto mb-16">
+    <section className="bg-[#F8F4EE] px-5 sm:px-6 py-10 sm:py-24">
+      <div className="max-w-300 mx-auto w-full sm:w-[90%]">
+
+        <div className="text-center max-w-150 mx-auto mb-10 sm:mb-16">
           <motion.div
             variants={SlideDown(0.2)}
             initial="hidden"
@@ -27,7 +27,7 @@ const Contact1 = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-5xl font-serif text-[#2D2927] mb-4"
+            className="text-3xl sm:text-5xl font-serif text-[#2D2927] mb-4"
           >
             Let's Talk With
             <span className="italic text-[#7A5C58]"> StyleHub</span>
@@ -44,22 +44,21 @@ const Contact1 = () => {
           </motion.p>
         </div>
 
-        {/* Main Box Section */}
         <motion.div
           variants={SlideUp(0.2)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="bg-[#FFFDF9] border border-[#E5DDD4] rounded-[35px] shadow-xl overflow-hidden flex w-full"
+          className="bg-[#FFFDF9] border border-[#E5DDD4] rounded-[25px] sm:rounded-[35px] shadow-xl overflow-hidden flex flex-col lg:flex-row w-full"
         >
-          {/* Left Info Sidebar */}
-          <div className="bg-[#7A5C58] text-white p-12 flex flex-col justify-between relative w-105">
+
+          <div className="bg-[#7A5C58] text-white p-7 sm:p-12 flex flex-col justify-between relative w-full lg:w-105">
             <div>
               <h1 className="text-xs uppercase tracking-[3px] text-[#E5D6D6] font-medium">
                 Information
               </h1>
 
-              <h2 className="text-3xl font-serif mt-2 mb-4 text-white">
+              <h2 className="text-2xl sm:text-3xl font-serif mt-2 mb-4 text-white">
                 We’re Here For You
               </h2>
 
@@ -68,7 +67,7 @@ const Contact1 = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="text-[#F3E9E5] text-sm leading-relaxed mb-10"
+                className="text-[#F3E9E5] text-sm leading-relaxed mb-8 sm:mb-10"
               >
                 Reach out to us through any channel, and our team will get back to you shortly.
               </motion.p>
@@ -81,7 +80,7 @@ const Contact1 = () => {
                 className="space-y-6"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center">
+                  <div className="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -95,7 +94,7 @@ const Contact1 = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center">
+                  <div className="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -109,14 +108,14 @@ const Contact1 = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center">
+                  <div className="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
                     <Mail className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <p className="text-xs text-[#E5D6D6] uppercase tracking-wider">
                       Email
                     </p>
-                    <p className="text-sm font-medium">
+                    <p className="text-sm font-medium break-all">
                       hello@stylehub.com
                     </p>
                   </div>
@@ -124,19 +123,18 @@ const Contact1 = () => {
               </motion.div>
             </div>
 
-            <div className="mt-12 pt-6 border-t border-white/10 text-xs text-[#E5D6D6]">
+            <div className="mt-10 sm:mt-12 pt-6 border-t border-white/10 text-xs text-[#E5D6D6]">
               StyleHub Official Studio © 2026
             </div>
           </div>
 
-          {/* Right Form Section */}
-          <div className="p-12 flex-1">
-            <motion.h3 
+          <div className="p-7 sm:p-12 flex-1">
+            <motion.h3
               variants={SlideUp(0.6)}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-2xl font-serif text-[#2D2927] mb-2"
+              className="text-xl sm:text-2xl font-serif text-[#2D2927] mb-2"
             >
               Send Us a Message
             </motion.h3>
@@ -146,14 +144,14 @@ const Contact1 = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-[#6D6561] text-sm mb-8"
+              className="text-[#6D6561] text-sm mb-6 sm:mb-8"
             >
               Fill out the fields below and we'll reply soon.
             </motion.p>
 
             <div className="space-y-5">
-              <div className="flex gap-5">
-                <div className="w-[50%]">
+              <div className="flex flex-col sm:flex-row gap-5">
+                <div className="w-full sm:w-[50%]">
                   <label className="block text-xs uppercase tracking-wider text-[#7A5C58] mb-2 font-medium">
                     Your Name
                   </label>
@@ -164,7 +162,7 @@ const Contact1 = () => {
                   />
                 </div>
 
-                <div className="w-[50%]">
+                <div className="w-full sm:w-[50%]">
                   <label className="block text-xs uppercase tracking-wider text-[#7A5C58] mb-2 font-medium">
                     Your Email
                   </label>
@@ -199,28 +197,29 @@ const Contact1 = () => {
               </div>
             </div>
 
-            <div className="mt-8 pt-4 flex items-center justify-between">
+            <div className="mt-8 pt-4 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
               <span className="text-xs text-[#9A8178]">
                 We respect your privacy.
               </span>
 
-              <motion.button 
+              <motion.button
                 variants={ZoomIn(0.8)}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="bg-[#7A5C58] text-white px-8 py-3.5 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-[#654945] hover:shadow-lg transition-all duration-300"
+                className="bg-[#7A5C58] text-white px-8 py-3.5 rounded-xl text-sm font-medium flex items-center justify-center gap-2 hover:bg-[#654945] hover:shadow-lg transition-all duration-300"
               >
                 <span>Send Message</span>
                 <ArrowRight className="w-4 h-4" />
               </motion.button>
             </div>
           </div>
-        </motion.div>
 
+        </motion.div>
       </div>
     </section>
   );
 };
 
 export default Contact1;
+
